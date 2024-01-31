@@ -1,0 +1,89 @@
+
+  /* Reset default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Make the header stand out */
+header {
+  background-color: #060706;
+  color: rgb(246, 250, 247);
+  text-align: center;
+  padding: 1.5em 0;
+}
+
+/* Style the main content area */
+main {
+  padding: 2em;
+  background: url('HomeBackground.png') no-repeat center center fixed;
+  background-size: cover;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+/* Introductory section styles */
+.intro p {
+  color: #333;
+  margin-bottom: 1em;
+  font-size: 1.2em;
+}
+
+.intro h3 {
+  color: #333;
+  margin-bottom: 2em;
+  font-weight: normal;
+}
+
+/* Call-to-action section styles */
+.cta {
+  background: rgba(255, 255, 255, 0.8);
+  padding: 2em;
+  border-radius: 10px;
+  margin-bottom: 2em;
+  max-width: 600px;
+}
+
+.cta h2 {
+  color: #333;
+  margin-bottom: 1em;
+}
+
+/* Button styles */
+input[type="submit"] {
+  width: 200px;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #4CAF50;
+  color: white;
+  cursor: pointer;
+  font-size: 1.2em;
+  transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+  background-color: #367c39;
+}
+
+/* Responsive layout for smaller screens */
+@media only screen and (max-width: 768px) {
+  main {
+      padding: 1em;
+  }
+
+  .cta {
+      width: 90%;
+  }
+
+  header {
+      padding: 1em 0;
+  }
+}
+
